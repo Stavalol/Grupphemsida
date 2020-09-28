@@ -5,8 +5,51 @@
 
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+
+<div class="mp-dp-cont" id="mp-cont">
+  <div id="mp-dp-close">
+    <span data-feather="x" onclick="phoneMenu();"></span>
+  </div>
+  <div class="text-center mb-5">
+    <span class="mp-dp-header">
+      San Torino
+    </span>
+  </div>
+  <div class="mp-dp-body text-center">
+    <div class="mp-dp-section">
+      <h2 class="mb-2 mp-dp-sect-head">
+        Navigation
+      </h2>
+
+      <h4 class="mp-dp-sect-item mb-5">
+        <a>
+          Home
+        </a>
+      </h4>
+      <h4 class="mp-dp-sect-item mb-5">
+        <a>
+          Menu
+        </a>
+      </h4>
+      <h4 class="mp-dp-sect-item mb-5">
+        <a>
+          About Us
+        </a>
+      </h4>
+      <h4 class="mp-dp-sect-item mb-5">
+        <a>
+          Contact Us
+        </a>
+      </h4>
+    </div>
+
+    </div>
+  </div>
+
+</div>
 
 <header>
 
@@ -47,8 +90,9 @@
       </ul>
 
     </div>
-    <div class="d-block d-m-none" id="mp-menu-btn">
-      <span data-feather="menu"></span>
+
+    <div class="d-block d-m-none mp-dp-open" id="mp-dp-open">
+      <span data-feather="menu"  onclick="phoneMenu();"></span>
     </div>
   </nav>
 
@@ -120,10 +164,10 @@
             </h3>
           </div>
           <div class="cardbody">
-            <p>Home</p>
-            <p>Menu</p>
-            <p>About us</p>
-            <p>Contact us</p>
+            <p><a>Home</a></p>
+            <p><a>Menu</a></p>
+            <p><a>About Us</a></p>
+            <p><a>Contact Us</a></p>
           </div>
         </div>
       </div>
@@ -147,5 +191,8 @@
 
 
 </body>
+<script>
+  feather.replace()
+</script>
 <script src="js/pizzeria.js"></script>
 </html>

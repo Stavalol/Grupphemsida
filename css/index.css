@@ -1,3 +1,4 @@
+@import url(root.css);
 /*---- Generals ----*/
 *{
   margin: 0;
@@ -14,7 +15,7 @@ body{
 
 header{
   width: 100%;
-  background-color: green;
+  background-color: var(--header-color);
 }
 
 main{
@@ -23,7 +24,7 @@ main{
 
 footer{
   width: 100%;
-  background-color: red;
+  background-color: var(--footer-color);
 }
 
 /*---- Navigation ----*/
@@ -52,7 +53,6 @@ footer{
 a{
   text-decoration: none;
   color: inherit;
-  font: 22px/44px D-DIN-Bold,Arial,Verdana,sans-serif;
 }
 
 .nav-links a {
@@ -74,13 +74,34 @@ a{
   font: 25px/50px D-DIN-Bold,Arial,Verdana,sans-serif;
 }
 
+/*---- Phone Nav ----*/
+
+.mp-dp-open{
+  position: absolute;
+  right: 4%;
+}
+
+.mp-dp-cont{
+  display:none;
+
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: var(--mp-dp-color);
+
+}
+
+.mp-dp-header{
+  font-size: 55px;
+}
 
 /*---- Body/Main ----*/
 
 /*---- Welcome Container ----*/
 .box{
   text-align: center;
-  background-color: #F5F5DC;
+  background-color: var(--box-color);
 }
 
 .welcome{
@@ -102,12 +123,12 @@ a{
 .buttons button{
   border: none;
   padding: 15px 32px;
-  background-color: #F5F5DC;
+  background-color: var(--button-color);
   color: black;
   font-size: 16px;
 }
 .buttons button:hover{
-  background-color: #d9b382;
+  background-color: var(--button-hover);
 }
 
 /*---- Pizza container ----*/

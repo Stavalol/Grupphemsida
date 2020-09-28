@@ -38,3 +38,16 @@ window.addEventListener("resize",function(){ //On window change
 
 
 });
+
+//Open phone menu
+function phoneMenu(){
+  //Create variables
+  var mpCont = document.getElementById("mp-cont"); //mpCont(Mobile Phone Container) = ID "mp-dp-cont"
+  var mpOpenBtn = document.getElementsByClassName("mp-dp-open"); //mpOpenBtn (Mobile Phone Open Button) = ID "mp-dp-open"
+  var mpCloseBtn = document.getElementById("mp-dp-close"); //mpCloseBtn (Mobile Phone Close Button) = ID "mp-dp-close"
+
+  mpCont.classList.toggle("d-block");
+
+}
+
+
