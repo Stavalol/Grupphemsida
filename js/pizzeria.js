@@ -17,9 +17,10 @@ function showSlides() {
 }
 
 
+
 //Button margins
 
-
+function buttonMargin(){
 //On window load set margin
 var welcomebox = document.querySelector('#welcomebox'); //Select welcomebox
 var compStyles = window.getComputedStyle(welcomebox); //Select style from welcomebox
@@ -38,8 +39,10 @@ window.addEventListener("resize",function(){ //On window change
 
 
 });
+}
 
 //Open phone menu
+
 function phoneMenu(){
   //Create variables
   var mpCont = document.getElementById("mp-cont"); //mpCont(Mobile Phone Container) = ID "mp-dp-cont"
