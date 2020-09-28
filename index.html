@@ -33,6 +33,12 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-item-info">
+            About us
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-item-projects">
             Contact Us
           </a>
@@ -49,66 +55,97 @@
 </header>
 
 <main>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-s-12 col-lg-8">
-      <div class="welcome box" id="welcomebox">
-        <h1 class="innerheader">
-          Welcome
-          San Torino
-        </h1>
-        <p>
-          Our pizza is the best pizza
-        </p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-s-12 col-m-12 col-lg-8">
+        <div class="welcome box" id="welcomebox">
+          <h1 class="innerheader">
+            Welcome To<br>
+            San Torino
+          </h1>
+          <p>
+            Our pizza is the best pizza
+          </p>
+        </div>
+        <div class="buttons" id="buttons">
+          <button>Order</button>
+          <button>Menu</button>
+        </div>
       </div>
-      <div class="buttons" id="buttons">
-        <button>Order</button>
-        <button>Menu</button>
+
+      <div class="col-s-12 col-m-12 col-lg-4">
+        <div class="pizza">
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img class="pizzaimg" src="img/pizza1.png" >
+            </div>
+
+            <div class="mySlides fade">
+              <img class="pizzaimg" src="img/pizza2.png">
+            </div>
+
+            <div class="mySlides fade">
+              <img class="pizzaimg" src="img/pizza3.png" >
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</main>
 
-    <div class="col-s-12 col-lg-4">
-      <div class="pizza">
-        <div class="slideshow-container">
-
-          <div class="mySlides fade">
-            <img class="pizzaimg" src="img/pizza1.png" >
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-s-12 col-lg-4">
+        <div class="cardcontainer">
+          <div class="cardheader">
+            <h3>
+              About us
+            </h3>
           </div>
-
-          <div class="mySlides fade">
-            <img class="pizzaimg" src="img/pizza2.png">
+          <div class="cardbody">
+            <p>Our pizzeria is established in stockholm and is one of the best</p>
           </div>
+        </div>
+      </div>
 
-          <div class="mySlides fade">
-            <img class="pizzaimg" src="img/pizza3.png" >
+      <div class="col-s-12 col-lg-4">
+        <div class="cardcontainer">
+          <div class="cardheader">
+            <h3>
+              Footer nav
+            </h3>
+          </div>
+          <div class="cardbody">
+            <p>Home</p>
+            <p>Menu</p>
+            <p>About us</p>
+            <p>Contact us</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-s-12 col-lg-4">
+        <div class="cardcontainer">
+          <div class="copyright">
+            <h4>
+              &#169 2020 - San Torino
+            </h4>
+          </div>
+          <div class="socials">
+            <p>ikansmfklamsf</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-</div>
-</main>
-
-<footer>
-
 </footer>
 
+
 </body>
-<script src="js/slideshow.js"></script>
-<script>
-
-    window.addEventListener("resize",function(){
-
-      var para = document.querySelector('#welcomebox');
-      var compStyles = window.getComputedStyle(para);
-
-      var marginRight = compStyles.getPropertyValue('margin-right');
-
-      document.getElementById("buttons").style.marginRight = marginRight;
-
-
-    });
-
-</script>
+<script src="js/pizzeria.js"></script>
 </html>

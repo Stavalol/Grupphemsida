@@ -1,12 +1,29 @@
+/*---- Generals ----*/
+*{
+  margin: 0;
+}
+
 html{
   height: 100%;
 }
 
-/*---- Header ----*/
+body{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 header{
   width: 100%;
-  height: 15%;
   background-color: green;
+}
+
+main{
+  width: 100%;
+}
+
+footer{
+  width: 100%;
+  background-color: red;
 }
 
 /*---- Navigation ----*/
@@ -15,7 +32,7 @@ header{
   position: absolute;
   display: inline-block;
   top: 3%;
-  right: 30%;
+  right: 20%;
   height: 20px;
 }
 
@@ -60,11 +77,7 @@ a{
 
 /*---- Body/Main ----*/
 
-main{
-  width: 100%;
-  height: 70%;
-}
-
+/*---- Welcome Container ----*/
 .box{
   text-align: center;
   background-color: #F5F5DC;
@@ -72,11 +85,10 @@ main{
 
 .welcome{
   align-content: center;
-  border: 1px solid black;
   width: 60%;
   height: 60%;
   margin: 5% auto 0 auto;
-  padding: 10% 10%;
+  padding: 10% 20%;
 }
 
 .innerheader{
@@ -87,14 +99,26 @@ main{
   float: right;
   margin: 10px auto 0 auto;
 }
+.buttons button{
+  border: none;
+  padding: 15px 32px;
+  background-color: #F5F5DC;
+  color: black;
+  font-size: 16px;
+}
+.buttons button:hover{
+  background-color: #d9b382;
+}
 
+/*---- Pizza container ----*/
 .pizza{
-
+  margin: 10% auto 0 auto;
 }
 
 /*---- Slideshow ----*/
 .mySlides {display: none;}
-.mySlides > img {vertical-align: middle; width: 30em; height: 30em; object-fit: contain;}
+.mySlides > img {vertical-align: middle; display: block; max-width: 100%; max-height: 70%; width: 80em; height: 40em; object-fit: contain; margin-left: auto;
+  margin-right: auto;}
 
 /* Fading animation */
 .fade {
@@ -114,8 +138,14 @@ main{
   to {opacity: 1}
 }
 
-footer{
-  width: 100%;
+/*---- Footer ----*/
+.cardcontainer{
+  margin: 10px auto;
+  width: 25%;
   height: 15%;
-  background-color: red;
+}
+
+.cardheader {
+ margin-bottom: 10px;
+
 }
