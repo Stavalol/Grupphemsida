@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<header>
+
+  <nav class="navbar">
+    <div class="navbar-header">
+            <span class="float-left text-center-s">
+              [Pizzeria Icon]
+            </span>
+    </div>
+    <div class="nav-container d-none d-m-block" id="navigation">
+
+      <ul class="nav-links">
+
+        <li class="nav-item">
+          <a class="nav-item-info">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item-me">
+            Menu
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item-projects">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+    <div class="d-block d-m-none" id="mp-menu-btn">
+      <span data-feather="menu"></span>
+    </div>
+  </nav>
+
+</header>
+
+<main>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-s-12 col-lg-8">
+      <div class="welcome box" id="welcomebox">
+        <h1 class="innerheader">
+          Welcome
+          San Torino
+        </h1>
+        <p>
+          Our pizza is the best pizza
+        </p>
+      </div>
+      <div class="buttons" id="buttons">
+        <button>Order</button>
+        <button>Menu</button>
+      </div>
+    </div>
+
+    <div class="col-s-12 col-lg-4">
+      <div class="pizza">
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img class="pizzaimg" src="img/pizza1.png" >
+          </div>
+
+          <div class="mySlides fade">
+            <img class="pizzaimg" src="img/pizza2.png">
+          </div>
+
+          <div class="mySlides fade">
+            <img class="pizzaimg" src="img/pizza3.png" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+<script src="js/slideshow.js"></script>
+<script>
+
+    window.addEventListener("resize",function(){
+
+      var para = document.querySelector('#welcomebox');
+      var compStyles = window.getComputedStyle(para);
+
+      var marginRight = compStyles.getPropertyValue('margin-right');
+
+      document.getElementById("buttons").style.marginRight = marginRight;
+
+
+    });
+
+</script>
+</html>
