@@ -98,6 +98,12 @@ a{
   font-size: 55px;
 }
 
+/*Header*/
+.headerlogo{
+  height: 30%;
+  width: 30%;
+}
+
 /*---- Body/Main ----*/
 
 /*---- Welcome Container ----*/
@@ -170,7 +176,6 @@ a{
 
 .cardheader {
  margin-bottom: 10px;
-
 }
 
 /*---- About Us Container ----*/
