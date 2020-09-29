@@ -1,0 +1,12 @@
+:root {
+  --header-color: green;
+  --main-color: white;
+  --footer-color: red;
+
+  --box-color: #F5F5DC;
+
+  --button-color: #F5F5DC;
+  --button-hover: #d9b382;
+
+  --mp-dp-color: #D3D3D3;
+}

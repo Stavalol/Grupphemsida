@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name = "keywords" content = "Pizzeria, San Torino" />
+  <meta name = "description" content = "Pizzeria San Torino" />
+
+  <link rel="icon" type="image/png" href="img/santorino.png" />
+
+  <title>Home Page</title>
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="meny.css">
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+<div class="mp-dp-cont" id="mp-cont">
+  <div id="mp-dp-close">
+    <span data-feather="x" onclick="phoneMenu();"></span>
+  </div>
+  <div class="text-center mb-5">
+    <span class="mp-dp-header">
+      San Torino
+    </span>
+  </div>
+  <div class="mp-dp-body text-center">
+    <div class="mp-dp-section">
+      <h2 class="mb-2 mp-dp-sect-head">
+        Navigation
+      </h2>
+
+      <h4 class="mp-dp-sect-item mb-5">
+        <a href="index.html">
+          Home
+        </a>
+      </h4>
+      <h4 class="mp-dp-sect-item mb-5">
+        <a href="menu.html">
+          Menu
+        </a>
+      </h4>
+      <h4 class="mp-dp-sect-item mb-5">
+        <a href="aboutus.html">
+          About Us
+        </a>
+      </h4>
+      <h4 class="mp-dp-sect-item mb-5">
+        <a href="contactus.html">
+          Contact Us
+        </a>
+      </h4>
+    </div>
+
+  </div>
+</div>
+
+
+<header>
+
+  <nav class="navbar">
+    <div class="navbar-header">
+            <span class="float-left text-center-s">
+             <a href="index.html"> <img src="img/santorino.png" class="headerlogo"> </a>
+            </span>
+    </div>
+    <div class="nav-container d-none d-m-block" id="navigation">
+
+      <ul class="nav-links">
+
+        <li class="nav-item">
+          <a class="nav-item-info" href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item-me" href="menu.html">
+            Menu
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item-info" href="aboutus.html">
+            About us
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item-projects" href="contactus.html">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="d-block d-m-none mp-dp-open" id="mp-dp-open">
+      <span data-feather="menu"  onclick="phoneMenu();"></span>
+    </div>
+  </nav>
+
+</header>
+
+<main>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-s-12 col-m-12 col-lg-8">
+        <div class="welcome box" id="welcomebox">
+          <h1 class="innerheader">
+            Welcome To<br>
+            San Torino
+          </h1>
+          <p>
+            Our pizza is the best pizza
+          </p>
+        </div>
+        <div class="buttons" id="buttons">
+          <button>Order</button>
+          <button>Menu</button>
+        </div>
+      </div>
+
+      <div class="col-s-12 col-m-12 col-lg-4">
+        <div class="pizza">
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img class="pizzaimg" src="img/pizza1.png" >
+            </div>
+
+            <div class="mySlides fade">
+              <img class="pizzaimg" src="img/pizza2.png">
+            </div>
+
+            <div class="mySlides fade">
+              <img class="pizzaimg" src="img/pizza3.png" >
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-s-12 col-lg-4">
+        <div class="cardcontainer">
+          <div class="cardheader">
+            <h3>
+              About us
+            </h3>
+          </div>
+          <div class="cardbody">
+            <p>Established in Stockholm. Welcome by for a pizza.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-s-12 col-lg-4">
+        <div class="cardcontainer">
+          <div class="cardheader">
+            <h3>
+              Footer nav
+            </h3>
+          </div>
+          <div class="cardbody">
+            <p><a>Home</a></p>
+            <p><a>Menu</a></p>
+            <p><a>About Us</a></p>
+            <p><a>Contact Us</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-s-12 col-lg-4">
+        <div class="cardcontainer">
+          <div class="copyright">
+            <h4>
+              &#169 2020 - San Torino
+            </h4>
+          </div>
+          <div class="socials">
+            <p>ikansmfklamsf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+</body>
+<script src="js/pizzeria.js"></script>
+<script>
+  buttonMargin();
+  slideShow();
+  feather.replace();
+</script>
+
+</html>
