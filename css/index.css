@@ -18,6 +18,9 @@ body{
 header{
   width: 100%;
   background-color: var(--header-color);
+
+  
+   
 }
 
 main{
@@ -113,9 +116,9 @@ a{
 }
 
 /*Header*/
-.headerlogo{
-  height: 30%;
-  width: 30%;
+.headerlogo {
+  height: 75px;
+  width: 75px;
 }
 
 /*---- Body/Main ----*/
