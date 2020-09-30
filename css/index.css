@@ -83,6 +83,11 @@ a{
   right: 4%;
 }
 
+#mp-dp-close {
+  position: absolute;
+  right: 4%;
+}
+
 .mp-dp-cont{
   display:none;
 
@@ -91,11 +96,20 @@ a{
   height: 100%;
   width: 100%;
   background-color: var(--mp-dp-color);
-
 }
 
 .mp-dp-header{
   font-size: 55px;
+}
+
+.mp-dp-sect-head{
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.mp-dp-sect-item{
+  font-size: 1.3em;
+  margin-bottom: 3px;
 }
 
 /*Header*/
@@ -124,10 +138,15 @@ a{
   margin-bottom: 20px;
 }
 
+.box p{
+  font-size: large;
+}
+
 .buttons{
   float: right;
   margin: 10px auto 0 auto;
 }
+
 .buttons button{
   border: none;
   padding: 15px 32px;
@@ -135,6 +154,7 @@ a{
   color: black;
   font-size: 16px;
 }
+
 .buttons button:hover{
   background-color: var(--button-hover);
 }
@@ -176,4 +196,8 @@ a{
 
 .cardheader {
  margin-bottom: 10px;
+}
+
+.cardbody p {
+  line-height: 1.4em;
 }
