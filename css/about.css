@@ -1,0 +1,27 @@
+/*---- About Us Container ----*/
+.boxomoss{
+    text-align: center;
+    background-color: var(--box-color);
+  }
+  
+  .omoss{
+    align-content: center;
+    width: 75%;
+    height: 60%;
+    margin: 5% auto 5% auto;
+    padding: 10% 20%;
+  }
+  
+  .innerheaderomoss{
+    margin-bottom: 20px;
+  }
+  /*---- About Us Pictures ----*/
+  .ristorante{
+    margin: 15% auto 0 auto;
+  }
+
+  .paulie {
+    width: 150px;
+    float: center;
+    border-radius: 50%;
+}
