@@ -10,7 +10,7 @@
 
  .left, .mid, .bot {
     align-content: center;
-    margin: 1% 0% 3% 40%;
+    margin: 1% 0 3% 40%;
     width: 50%;
     font: 19px D-DIN-Bold,Arial,Verdana,sans-serif;
     

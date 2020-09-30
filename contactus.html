@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name = "keywords" content = "Pizzeria, San Torino" />
   <meta name = "description" content = "Pizzeria San Torino" />
-  
-  <link rel="icon" type="image/png" href="img/santorino.png" /><title>About us</title>
-  
+
+  <link rel="icon" type="image/png" href="img/santorino.png" />
+
+  <title>Home Page</title>
+
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/meny.css">
+  <link rel="stylesheet" href="css/contact.css">
+  
 
 
   <script src="https://unpkg.com/feather-icons"></script>
@@ -63,7 +66,7 @@
   <nav class="navbar">
     <div class="navbar-header">
             <span class="float-left text-center-s">
-              <a href="index.html"> <img src="img/santorino.png" class="headerlogo"> </a>
+             <a href="index.html"> <img src="img/santorino.png" class="headerlogo" height="300px" width="260px"> </a>
             </span>
     </div>
     <div class="nav-container d-none d-m-block" id="navigation">
@@ -71,27 +74,25 @@
       <ul class="nav-links">
 
         <li class="nav-item">
-          <a href="index.html"class="nav-item-info">
+          <a class="nav-item-info" href="index.html">
             Home
           </a>
         </li>
 
         <li class="nav-item">
-
-          <a href="menu.html" class="nav-item-me">
-
+          <a class="nav-item-me" href="menu.html">
             Menu
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="aboutus.html"class="nav-item-info">
+          <a class="nav-item-info" href="aboutus.html">
             About us
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="contactus.html"class="nav-item-projects">
+          <a class="nav-item-projects" href="contactus.html">
             Contact Us
           </a>
         </li>
@@ -108,42 +109,61 @@
 </header>
 
 <main>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-s-12 col-m-12 col-lg-8">
-        <div class="omoss box" id="omoss">
-          <h1 class="innerheaderomoss">
-            Om oss
-          </h1>
-          <p>
-            Vi hälsar er välkomna till Pizzeria San Torino <br>
-Här kan du sitta ned och avnjuta våra pizzor med riklig fyllning.<br><br>
+  <div id="firstParagraph">
+    <h1 style="font-size: 50px">Pizzeria San Torino</h1>
+    <br>
+    <h2><u>Contact us!</u></h2>
+      <br>
+        <h4>Pizzeria San Torino</h4>
+      <br>
+        <p>
+          Telephone: 08-510-6311
+      <br>
+          Address: Sveavägen 92
+        </p>
+      <br>
+      <h3>Contact us via email!</h3>
+        <p>
+          <u>info@pizzeriasantorino.se</u>
+      <br><br>
+          You are always welcome to contact us!
+      <br> 
+          We care about your opinions and questions regarding our food and restaurant.
+    </p>
+  </div>
 
-Vi erbjuder en trevlig och välkomnande restaurangmiljö som en naturlig mötespunkt för alla eller vill du beställa och ta med hem går det lika bra. 
-Vi lovar en härlig smakupplevelse!<br><br>
-Vår målsättning är fräsch och närproducerad mat, mat för kropp och själ. Vi vill tillgodose olika behov och försöker även ta hänsyn till allergier och överkänslighet mot diverse livsmedel som är en del av många människors vardag. För oss på Pizzeria San Torino är det viktigt med god kvalité och välmående, såväl för våra kunder som för vår planet.<br><br>
-Välkomna!<br><br><br>
+  <!-- OpenStreetMap.org API -->
+  <div id="streetMap">
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" zoom="14" src="https://www.openstreetmap.org/export/embed.html?bbox=18.050966262817386%2C59.33927395307601%2C18.06512832641602%2C59.34412109611701&amp;layer=mapnik&amp;marker=59.341697611067595%2C18.0580472946167" style="border: 1px solid black"></iframe>
+    <br>
+    <small>
+      <a href="https://www.openstreetmap.org/?mlat=59.34170&amp;mlon=18.05805#map=17/59.34170/18.05805">View Larger Map</a>
+    </small>
+  </div>
 
-<img class="paulie" src=img/paulie.png><br>
-<b>"The best pizza I've ever had"</b> <br> <i>Paulie Walnuts Gualtieri</i>
-          </p>
-        </div>
-       
-      </div>
-
-      <div class="col-s-12 col-m-12 col-lg-4">
-        <div class="ristorante">
-              <img class="rostoranteimg" src="img/ristorante.png" >
-              <img class="rostoranteimg" src="img/ristorante2.png">
-              <img class="rostoranteimg" src="img/chef.png">
-            </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="emailForm">
+    <h2><u>Email us!</u></h2>
+    <br>
+    <form action="mailto:info@pizzeriasantorino.se" method="post" enctype="text/plain">
+          Name:
+        <br>
+      <input type="text" name="name">
+        <br><br>
+          Email:
+        <br>
+      <input type="text" name="mail">
+        <br><br>
+          Subject:
+        <br>
+      <input type="text" name="subject">
+        <br><br>
+          Message:<br> <textarea name=”VisitorComment” rows="4" cols="20" style="height: 120px; width: 280px;">
+      </textarea>
+        <br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </form>
+    <br><br>
   </div>
 </main>
 
@@ -171,10 +191,10 @@ Välkomna!<br><br><br>
             </h3>
           </div>
           <div class="cardbody">
-            <p><a href="index.html">Home</a></p>
-            <p><a href="menu.html">Menu</a></p>
-            <p><a href="aboutus.html">About Us</a></p>
-            <p><a href="contact.html">Contact Us</a></p>
+            <p><a>Home</a></p>
+            <p><a>Menu</a></p>
+            <p><a>About Us</a></p>
+            <p><a>Contact Us</a></p>
           </div>
         </div>
       </div>
@@ -182,7 +202,7 @@ Välkomna!<br><br><br>
       <div class="col-s-12 col-lg-4">
         <div class="cardcontainer">
           <div class="copyright">
-            <h4>
+           <h4>
               &#169 2020 - San Torino<br><br>
             </h4>
           </div>
@@ -191,11 +211,6 @@ Välkomna!<br><br><br>
             <a title="Besök vår facebooksida" href="http://www.facebook.com/" target="_blank" rel="external"><img class="facebook" src="img/fb.png"></a>
             <a title="Besök vår youtubesida" href="http://www.youtube.com/" target="_blank"rel="external"><img class="youtube" src="img/Youtube.png" ></a>
             <a title="Besök vår instagramsida" href="http://www.instagram.com/" target="_blank"rel="external"><img class="instagram" src="img/insta.png" ></a>
-                    </div>
-        
-                    </div>
-
-
           </div>
         </div>
       </div>
