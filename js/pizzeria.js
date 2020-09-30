@@ -24,8 +24,8 @@ function slideShow(){
 
 function buttonMargin(){
 //On window load set margin
-var welcomebox = document.querySelector('.box'); //Select welcomebox
-var compStyles = window.getComputedStyle(welcomebox); //Select style from welcomebox
+var box = document.querySelector('.box'); //Select welcomebox
+var compStyles = window.getComputedStyle(box); //Select style from welcomebox
 
 var marginRight = compStyles.getPropertyValue('margin-right'); //Select specific style
 
@@ -38,7 +38,6 @@ window.addEventListener("resize",function(){ //On window change
   var marginRight = compStyles.getPropertyValue('margin-right'); //Select specific style
 
   document.getElementById("buttons").style.marginRight = marginRight; //Set margin of buttons
-
 
 });
 }
